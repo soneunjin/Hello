@@ -24,7 +24,18 @@ public class Ex01 {
 		 * 
 		 */
 		
-		System.out.println((char)('b' - 32));
+		// 1. 입력받을 준비하고
+		 Scanner sc = new Scanner(System.in);
+		// 2. 메세지 출력
+		 System.out.print("문자를 입력하세요 : ");
+		// 3. 입력데이터 변수에 담고
+		 String str = sc.nextLine();
+		// 4. 변수에 담긴 문자열에서 문자 추출하고
+		 char ch = str.charAt(0);
+		// 5. 변환해서 변수에 담고
+		 char ch1 = (ch >= 'a') ? (char)(ch - ('a' - 'A')) : (char)(ch + ('a' - 'A'));
+		// 6. 출력해준다
+		 System.out.println("입력한 문자 ["+ ch + "] 를 변환하며["+ ch1+"] 입니다." );
 		
 		
 		
