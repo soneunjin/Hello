@@ -17,9 +17,6 @@ public class Test09 {
 	    		if(tmp == num[j]) {
 	    			i--;
 	    			continue lotto;
-	    			
-	    			
-	    			
 	    		}
 	    	}
 	    	num[i] = tmp;
